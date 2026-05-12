@@ -69,7 +69,7 @@ class DynamicFormWidget extends \yii\base\Widget
     /**
      * @var string
      */
-    private $_options;
+    private $_options = [];
     /**
      * @var string
      */
@@ -196,7 +196,7 @@ class DynamicFormWidget extends \yii\base\Widget
     /**
      * Registers the needed assets.
      *
-     * @param View $view The View object
+     * @param \yii\web\View $view The View object
      */
     public function registerAssets($view)
     {
